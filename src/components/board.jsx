@@ -43,7 +43,6 @@ class Board extends React.Component{
             <div>
                 <div className = "player-turn">{status}</div>
                 <div>
-                    ////assingning the indexes manually and providing props 
                     <Square value = {this.state.squares[0]} onClick = {()=>this.handleClick(0)}/>
                     <Square value = {this.state.squares[1]} onClick = {()=>this.handleClick(1)}/>
                     <Square value = {this.state.squares[2]} onClick = {()=>this.handleClick(2)}/>

@@ -11,7 +11,7 @@ export function checkTheWinner(square)
         [ 2, 4, 6 ],
     ];
 
-
+//possible combinations to win
     for(let i=0;i<combinations.length;i++)
     {
         const [a,b,c] = combinations[i]

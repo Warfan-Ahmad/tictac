@@ -41,18 +41,18 @@ class Board extends React.Component{
 
         return(
             <div>
-                <div className = "player-turn">{status}</div>
-                <div>
+                <div className = "status">{status}</div>
+                <div className = "board-row">
                     <Square value = {this.state.squares[0]} onClick = {()=>this.handleClick(0)}/>
                     <Square value = {this.state.squares[1]} onClick = {()=>this.handleClick(1)}/>
                     <Square value = {this.state.squares[2]} onClick = {()=>this.handleClick(2)}/>
                 </div>
-                <div>
+                <div className = "board-row">
                     <Square value = {this.state.squares[3]} onClick = {()=>this.handleClick(3)} />
                     <Square value = {this.state.squares[4]} onClick = {()=>this.handleClick(4)}/>
                     <Square value = {this.state.squares[5]} onClick = {()=>this.handleClick(5)}/>
                 </div>
-                <div>
+                <div className = "board-row">
                     <Square value = {this.state.squares[6]} onClick = {()=>this.handleClick(6)} />
                     <Square value = {this.state.squares[7]} onClick = {()=>this.handleClick(7)}/>
                     <Square value = {this.state.squares[8]} onClick = {()=>this.handleClick(8)}/>
